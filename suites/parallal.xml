@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="smule-android" parallel="tests" thread-count="2">
+
+	<!--SonyXperia_Settings -->
+	<test name="Nokia">
+		<parameter name="deviceName" value="Nokia 6.1" />
+		<parameter name="version" value="9.0" />
+		<classes>
+			<class name="tests.DemoTest" />
+		</classes>
+	</test>
+
+	<test name="Galaxy">
+		<parameter name="version" value="8.1.0" />
+		<parameter name="deviceName" value="Galaxy J7" />
+		<classes>
+			<class name="tests.DemoTest" />
+		</classes>
+	</test>
+
+</suite>
